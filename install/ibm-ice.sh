@@ -8,4 +8,5 @@ sudo apt-get \
 export ICE=icecli-2.0.zip
 
 curl -O https://static-ice.ng.bluemix.net/$ICE
-sudo pip install $ICE
+sudo pip install icecli-2.0.zip
+ice version
