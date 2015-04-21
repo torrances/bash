@@ -18,8 +18,8 @@ mkdir -p $WS
 cd $WS
 
 git init
-git remote remove docker
-git remote add docker http://github.com/torrances/docker
-git pull -u docker master
+git remote remove wsdoc
+git remote add wsdoc http://github.com/torrances/docker
+git pull -u wsdoc master
 
-sudo sh -c 'echo "\nexport WSDOOC=/home/craig/workspaces/public/docker" >> /etc/environment'
+sudo sh -c 'echo "\nexport WSDOC=/home/craig/workspaces/public/docker" >> /etc/environment'

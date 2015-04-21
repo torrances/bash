@@ -19,8 +19,8 @@ mkdir -p $WS
 cd $WS
 
 git init
-git remote add snowball http://github.com/torrances/snowball
-git pull -u snowball master
+git remote add wssno http://github.com/torrances/snowball
+git pull -u wssno master
 mvn clean install	
 
 sudo sh -c 'echo "\nexport WSSNO=/home/craig/workspaces/public/snowball" >> /etc/environment'

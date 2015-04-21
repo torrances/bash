@@ -19,9 +19,9 @@ mkdir -p $WS
 cd $WS
 
 git init
-git remote add bom http://github.com/torrances/bom
-git pull -u bom master
+git remote add wsbom http://github.com/torrances/bom
+git pull -u wsbom master
 cd build
 mvn clean install	
 
-sudo sh -c 'echo "\nexport BOM=/home/craig/workspaces/public/bom" >> /etc/environment'
+sudo sh -c 'echo "\nexport WSBOM=/home/craig/workspaces/public/bom" >> /etc/environment'
