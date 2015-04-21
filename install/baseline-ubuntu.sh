@@ -12,7 +12,8 @@ sudo apt-get \
     unity-lens* \
     empathy* \
     gdrive* \
-    rhythymbox
+    rhythymbox* \
+    openjdk*
 
 sudo apt-get \
   clean

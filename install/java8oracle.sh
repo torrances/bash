@@ -1,10 +1,36 @@
-if hash java 2>/dev/null;
-    then
-    echo "Java is already installed"
-    java -version
-else
-	sudo mkdir -p /usr/lib/jvm/jdk/
-	sudo mv ~/Downloads/jdk-8u31-linux-x64.tar.gz /usr/lib/jvm/jdk/
-	cd /usr/lib/jvm/jdk/
-	sudo tar -zxvf jdk-8u31-linux-x64.tar.gz
-fi
+################################################################
+##
+## PURPOSE:
+## download and install Oracle Java 8
+##
+## HISTORY:
+## 3:50 PM 4/21/2015 created 
+##
+## PREREQUSITES:
+## <none>
+##
+################################################################
+
+# make sure the apt-add-repository in the next section works properly
+sudo apt-get \
+  install -y \
+    software-properties-common \
+    python-software-properties
+
+# add the oracle repository
+sudo apt-add-repository \
+  ppa:webupd8team/java
+
+# update
+sudo apt-get \
+  update
+
+# install oracle java
+sudo apt-get \
+  install -y \
+    oracle-java8-installer
+
+# correct the "'No such file or directory' when invoking java" error that occurs in some ubuntu configurations
+sudo apt-get \
+  install -y \
+    libc6-i386
