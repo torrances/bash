@@ -11,21 +11,15 @@
 ##
 ################################################################
 
-export WS=~/workspaces
-export WSDOC=$WS/public/java-docker
+export WS=/home/craig/workspaces/public/docker/
 
-if [ ! -d "$WSDOC" ]; 
-	then
+rm -rf $W
+mkdir -p $WS
+cd $WS
 
-	echo "Downloading ($WSDOC)"
+git init
+git remote remove docker
+git remote add docker http://github.com/torrances/docker
+git pull -u docker master
 
-	mkdir -p $WSDOC
-	cd $WSDOC
-	git init
-	git remote add wsdoc http://github.com/torrances/docker
-	git pull -u wsdoc master
-	cd build
-	mvn clean install
-else
-	echo "Directory already exists $($WSDOC)"
-fi
+sudo sh -c 'echo "\nexport WSDOOC=/home/craig/workspaces/public/docker" >> /etc/environment'

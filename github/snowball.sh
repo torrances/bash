@@ -1,7 +1,7 @@
 ################################################################
 ##
 ## PURPOSE:
-## download and build java-commons from github
+## download and build bom from github
 ##
 ## HISTORY:
 ## 5:03 PM 4/20/2015 created 
@@ -12,15 +12,15 @@
 ##
 ################################################################
 
-export WS=/home/craig/workspaces/public/java-commons/
+export WS=/home/craig/workspaces/public/snowball/
 
-rm -rf $WS
+rm -rf $W
 mkdir -p $WS
 cd $WS
 
 git init
-git remote add wsjc http://github.com/torrances/java-commons
-git pull -u wsjc master
+git remote add snowball http://github.com/torrances/snowball
+git pull -u snowball master
 mvn clean install	
 
-sudo sh -c 'echo "\nexport WSJC=/home/craig/workspaces/public/java-commons" >> /etc/environment'
+sudo sh -c 'echo "\nexport WSSNO=/home/craig/workspaces/public/snowball" >> /etc/environment'
