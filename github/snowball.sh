@@ -14,7 +14,7 @@
 
 export WS=/home/craig/workspaces/public/snowball/
 
-rm -rf $W
+rm -rf $WS
 mkdir -p $WS
 cd $WS
 

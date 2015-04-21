@@ -13,12 +13,11 @@
 
 export WS=/home/craig/workspaces/public/docker/
 
-rm -rf $W
+rm -rf $WS
 mkdir -p $WS
 cd $WS
 
 git init
-git remote remove wsdoc
 git remote add wsdoc http://github.com/torrances/docker
 git pull -u wsdoc master
 
