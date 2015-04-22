@@ -42,5 +42,11 @@ sudo chmod \
 sudo mv \
   docker-compose /usr/local/bin/
 
+# bug fix for docker compoes
+# <https://github.com/docker/compose/issues/88>
+sudo sh -c \
+  "\necho DOCKER_OPTS=\"-H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock\" >> /etc/default/docker"
+sudo service docker restart
+
 # display the version on the console
 docker-compose --version
