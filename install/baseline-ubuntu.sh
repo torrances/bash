@@ -25,7 +25,8 @@ sudo apt-get \
 # launch with "sudo bum"
 sudo apt-get \
   install -y \
-    bum
+    bum \
+    glances
 
 # update .bashrc
 sh -c 'echo "\nsource /etc/environment" >> ~/.bashrc'
