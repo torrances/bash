@@ -26,3 +26,6 @@ sudo apt-get \
 sudo apt-get \
   install -y \
     bum
+
+# update .bashrc
+sh -c 'echo "\nsource /etc/environment" >> ~/.bashrc'
