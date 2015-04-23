@@ -12,7 +12,7 @@
 ##
 ################################################################
 
-export WS=/home/craig/workspaces/public/$1/projects
+export WS=/home/craig/workspaces/public/projects/$1/
 
 if [ -d "$WS" ]; 
 	then
