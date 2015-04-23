@@ -12,9 +12,13 @@
 ##
 ################################################################
 
-export WS=/home/craig/workspaces/public/$1/
+export WS=/home/craig/workspaces/public/$1/projects
 
-rm -rf $WS
+if [ -d "$WS" ]; 
+	then
+	rm -rf $WS
+fi
+
 mkdir -p $WS
 cd $WS
 
