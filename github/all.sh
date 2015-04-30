@@ -18,6 +18,9 @@
 ##
 ################################################################
 
+./pull.sh docker wsdoc
+sudo sh -c 'echo "\nexport WSDOC=/home/craig/workspaces/public/projects/docker" >> /etc/environment'
+
 ./pull.sh bom wsbom
 sudo sh -c 'echo "\nexport WSBOM=/home/craig/workspaces/public/projects/bom" >> /etc/environment'
 
@@ -25,16 +28,13 @@ sudo sh -c 'echo "\nexport WSBOM=/home/craig/workspaces/public/projects/bom" >> 
 sudo sh -c 'echo "\nexport WSJC=/home/craig/workspaces/public/projects/java-commons" >> /etc/environment'
 
 ./pull.sh snowball wssno
-sudo sh -c 'echo "\nexport WSSNO=/home/craig/workspaces/public/project/snowball" >> /etc/environment'
-
-./pull.sh docker wsdoc
-sudo sh -c 'echo "\nexport WSDOC=/home/craig/workspaces/public/project/docker" >> /etc/environment'
+sudo sh -c 'echo "\nexport WSSNO=/home/craig/workspaces/public/projects/snowball" >> /etc/environment'
 
 ./pull.sh solr-minimalist wssm
-sudo sh -c 'echo "\nexport WSSM=/home/craig/workspaces/public/project/solr-minimalist" >> /etc/environment'
+sudo sh -c 'echo "\nexport WSSM=/home/craig/workspaces/public/projects/solr-minimalist" >> /etc/environment'
 
 ./pull.sh jaxrs-minimalist wsjm
-sudo sh -c 'echo "\nexport WSJM=/home/craig/workspaces/public/project/jaxrs-minimalist" >> /etc/environment'
+sudo sh -c 'echo "\nexport WSJM=/home/craig/workspaces/public/projects/jaxrs-minimalist" >> /etc/environment'
 
 ./pull.sh jaxrs-mongo wsjmg
 sudo sh -c 'echo "\nexport WSJMG=/home/craig/workspaces/public/projects/jaxrs-mongo" >> /etc/environment'
