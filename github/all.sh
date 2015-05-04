@@ -18,26 +18,26 @@
 ##
 ################################################################
 
-./pull.sh docker WSPDO
+./pull.sh docker wspdo
 sudo sh -c 'echo "\nexport WSPDO=/home/craig/workspaces/public/projects/docker" >> /etc/environment'
 
-./pull.sh bom WSPBO
+./pull.sh bom wspbo
 sudo sh -c 'echo "\nexport WSPBO=/home/craig/workspaces/public/projects/bom" >> /etc/environment'
 
-./pull.sh java-commons WSPJC
+./pull.sh java-commons wspjco
 sudo sh -c 'echo "\nexport WSPJC=/home/craig/workspaces/public/projects/java-commons" >> /etc/environment'
 
-./pull.sh snowball WSPSN
+./pull.sh snowball wspsn
 sudo sh -c 'echo "\nexport WSPSN=/home/craig/workspaces/public/projects/snowball" >> /etc/environment'
 
-./pull.sh solr-minimalist WSPSM
+./pull.sh solr-minimalist wspsmi
 sudo sh -c 'echo "\nexport WSPSM=/home/craig/workspaces/public/projects/solr-minimalist" >> /etc/environment'
 
-./pull.sh jaxrs-minimalist WSPJM
+./pull.sh jaxrs-minimalist wspjmi
 sudo sh -c 'echo "\nexport WSPJM=/home/craig/workspaces/public/projects/jaxrs-minimalist" >> /etc/environment'
 
-./pull.sh jaxrs-mongo WSPJMO
+./pull.sh jaxrs-mongo wspjmo
 sudo sh -c 'echo "\nexport WSPJMO=/home/craig/workspaces/public/projects/jaxrs-mongo" >> /etc/environment'
 
-./pull.sh gngrams-scripts WSPGS
+./pull.sh gngrams-scripts wspgss
 sudo sh -c 'echo "\nexport WSPGS=/home/craig/workspaces/public/projects/jaxrs-mongo" >> /etc/environment'
